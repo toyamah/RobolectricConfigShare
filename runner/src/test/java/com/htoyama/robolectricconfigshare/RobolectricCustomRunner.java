@@ -9,7 +9,7 @@ import java.lang.reflect.Method;
 import htoyama.com.robolectricconfigshare.BuildConfig;
 
 public class RobolectricCustomRunner extends RobolectricGradleTestRunner {
-  private static final int[] SDK = new int[]{21};
+  private static final int[] SDK = new int[]{23};
 
   public RobolectricCustomRunner(Class<?> klass) throws InitializationError {
     super(klass);
@@ -23,13 +23,15 @@ public class RobolectricCustomRunner extends RobolectricGradleTestRunner {
         c.manifest(),
         c.qualifiers(),
         c.packageName(),
+        c.abiSplit(),
         c.resourceDir(),
         c.assetDir(),
+        c.buildDir(),
         c.shadows(),
+        c.instrumentedPackages(),
         c.application(),
         c.libraries(),
-        pickConstants(c.constants())
-    );
+        pickConstants(c.constants()));
   }
 
   private static int[] pickSdkLevel(int[] sdkArray) {
