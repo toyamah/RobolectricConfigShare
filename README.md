@@ -9,7 +9,7 @@ Robolectricの`@Config`の設定を共通化させる方法
 * [Robolectric3.1の例](https://github.com/egugue/RobolectricConfigShare/tree/ver3.1/file/src/test/resources)
 
 #### テストランナーを作成する
-`RobolectricGradleRunner`を継承したクラスで、`@Config`を共通化させる。
+`RobolectricGradleTestRunner`を継承したクラスで、`@Config`を共通化させる。
 
 * [Robolectric3.0の例](https://github.com/egugue/RobolectricConfigShare/blob/ver3.0/runner/src/test/java/com/htoyama/robolectricconfigshare/RobolectricCustomRunner.java)
 * [Robolectric3.1の例](https://github.com/egugue/RobolectricConfigShare/blob/ver3.1/runner/src/test/java/com/htoyama/robolectricconfigshare/RobolectricCustomRunner.java)
