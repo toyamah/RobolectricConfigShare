@@ -19,3 +19,4 @@ Robolectricの`@Config`の設定を共通化させる方法
 ----
 #### 資料
 * [Speacker Deck](https://speakerdeck.com/egugue/robolectricfalse-at-configwogong-tong-hua-surufang-fa)
+* [qiita](http://qiita.com/egugue/items/1bc223fbf6025b2d6bd6)
